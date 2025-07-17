@@ -1,0 +1,15 @@
+version: "1"
+services:
+  - name: my-react-app
+    type: web
+    env: node
+    repo: https://github.com/Tech041/vicel-pharmacy
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: serve -s build
+    publishPath: build
+    plan: free
+    routes:
+      - source: "/*"
+        destination: "/index.html"
+        status: 200
