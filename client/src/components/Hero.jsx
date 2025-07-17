@@ -18,9 +18,9 @@ const Hero = () => {
               viewport={{ once: false }}
             >
               <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl uppercase text-center lg:text-start text-green-700 ">
-                Young <span className="italic">pharmacists</span>{" "}
+                Young <span className="">pharmacists</span>{" "}
                 job application portal{" "}
-                <span className="text-yellow-600 italic">(psn-ypg lagos chapter)</span>.
+                <span className="text-yellow-600">(psn-ypg lagos chapter)</span>.
               </h1>
             </motion.div>
 
