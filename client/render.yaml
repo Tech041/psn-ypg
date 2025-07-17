@@ -3,7 +3,7 @@ services:
   - name: my-react-app
     type: web
     env: node
-    repo: https://github.com/Tech041/vicel-pharmacy
+    repo: https://github.com/Tech041/psn-ypg
     branch: main
     buildCommand: npm install && npm run build
     startCommand: serve -s build
