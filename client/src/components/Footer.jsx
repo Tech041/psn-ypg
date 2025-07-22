@@ -123,9 +123,21 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className="">
+          <p className="text-center py-1">Visit our official website</p>
+
+          <a
+            href="https://psnypglagos.org"
+            target="_blank"
+            className="text-center block text-blue-500 underline pb-2"
+          >
+            https://psnypglagos.org
+          </a>
+        </div>
         <div className="">
           <hr className="" />
-          <p className="py-5 text-xs text-center  ">
+          <p className="py-5 text-xs  text-center  ">
             Copyright &copy;PSN-YPG Lagos {new Date().getFullYear()} <br />
             <span className="">All rights reserved.</span>
           </p>
