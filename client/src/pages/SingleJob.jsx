@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import Spinner from "../components/Spinner";
 import { formatDistanceToNow } from "date-fns";
@@ -29,7 +29,7 @@ const SingleJob = () => {
           <div className="flex justify-between gap-4">
             <div className="flex-1">
               <div className="mt-5">
-                
+                <h1 className="py-2 text-green-600 italic">We wish you well in your job hunt, Goodluck!!!.</h1>
                 <div>
                   <span className={spanStyle}>Job Title:</span> {jobItem.title}
                 </div>
@@ -67,6 +67,9 @@ const SingleJob = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex items-center justify-center py-4">
+          <Link to={"/jobs"} className="text-blue-500 underline">View all jobs</Link>
         </div>
       </div>
     </section>

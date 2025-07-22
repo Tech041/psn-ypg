@@ -50,19 +50,19 @@ const Login = () => {
       <div className="container">
         <div className="flex justify-center items-center">
           <div className="w-96">
-            <div className="bg-slate-900 p-10 rounded-lg shadow-lg w-full  text-indigo-300 text-sm">
+            <div className="bg-green-600 p-10 rounded-lg shadow-lg w-full  text-white text-sm">
               <h2 className="text-3xl text-white text-center mb-3 font-semibold">
                 Login
               </h2>
               <p className="text-center text-sm mb-6">Admin account</p>
               <form onSubmit={handleSubmit(onSubmitHandler)} className="">
                 <div className="mb-4">
-                  <div className=" flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C]">
+                  <div className=" flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-white">
                     <img src={assets.lock_icon} alt="lock_icon" className="" />
                     <input
                       {...register("password")}
                       type="password"
-                      className="bg-transparent outline-none text-white w-full"
+                      className="bg-white outline-none text-black w-full"
                       placeholder="Password"
                     />
                   </div>
@@ -75,7 +75,7 @@ const Login = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-900 text-white font-medium"
+                  className="w-full py-2.5 rounded-full bg-gradient-to-r from-green-500 to-yellow-500 text-white font-medium"
                 >
                   Login
                 </button>
