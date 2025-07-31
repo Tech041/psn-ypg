@@ -141,15 +141,16 @@ const JobList = () => {
                       <span className={spanStyle}>Facility:</span>{" "}
                       {jobItem.facility}
                     </div>
+
+                    <div>
+                      <span className={spanStyle}>Contact:</span>{" "}
+                      {jobItem.contact}
+                    </div>
                     <div>
                       <span className={spanStyle}>Posted:</span>{" "}
                       {formatDistanceToNow(new Date(jobItem.createdAt), {
                         addSuffix: true,
                       })}
-                    </div>
-                    <div>
-                      <span className={spanStyle}>Contact:</span>{" "}
-                      {jobItem.contact}
                     </div>
                     {token && (
                       <div className="mt-4 pt-4 flex justify-center mb-4">
@@ -212,15 +213,16 @@ const JobList = () => {
                         <span className={spanStyle}>Facility:</span>{" "}
                         {item.facility}
                       </div>
+
+                      <div>
+                        <span className={spanStyle}>Contact:</span>{" "}
+                        {item.contact}
+                      </div>
                       <div>
                         <span className={spanStyle}>Posted:</span>{" "}
                         {formatDistanceToNow(new Date(item.createdAt), {
                           addSuffix: true,
                         })}
-                      </div>
-                      <div>
-                        <span className={spanStyle}>Contact:</span>{" "}
-                        {item.contact}
                       </div>
                       {token && (
                         <div className="mt-2 text-center">

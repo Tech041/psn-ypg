@@ -37,8 +37,8 @@ const OurBlogs = () => {
           </motion.div>
           <div className="flex-1  w-full h-full">
             <motion.div
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: false }}
             >
@@ -53,8 +53,8 @@ const OurBlogs = () => {
           </div>
           <div className="flex-1  w-full h-full">
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: false }}
             >

@@ -29,7 +29,9 @@ const SingleJob = () => {
           <div className="flex justify-between gap-4">
             <div className="flex-1">
               <div className="mt-5">
-                <h1 className="py-2 text-green-600 italic">We wish you well in your job hunt, Goodluck!!!.</h1>
+                <h1 className="py-2 text-green-600 italic">
+                  We wish you well in your job hunt, Goodluck!!!.
+                </h1>
                 <div>
                   <span className={spanStyle}>Job Title:</span> {jobItem.title}
                 </div>
@@ -46,13 +48,13 @@ const SingleJob = () => {
                 </div>
 
                 <div>
+                  <span className={spanStyle}>Contact:</span> {jobItem.contact}
+                </div>
+                <div>
                   <span className={spanStyle}>Posted:</span>{" "}
                   {formatDistanceToNow(new Date(jobItem.createdAt), {
                     addSuffix: true,
                   })}
-                </div>
-                <div>
-                  <span className={spanStyle}>Contact:</span> {jobItem.contact}
                 </div>
                 {token && (
                   <div className="mt-4 pt-4 flex justify-center mb-4">
@@ -69,7 +71,9 @@ const SingleJob = () => {
           </div>
         </div>
         <div className="flex items-center justify-center py-4">
-          <Link to={"/jobs"} className="text-blue-500 underline">View all jobs</Link>
+          <Link to={"/jobs"} className="text-blue-500 underline">
+            View all jobs
+          </Link>
         </div>
       </div>
     </section>

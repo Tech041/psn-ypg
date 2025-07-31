@@ -29,7 +29,7 @@ const NewsLetter = () => {
   return (
     <section className="w-full h-[400px] py-8 px-4 rounded-md ">
       <motion.div
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: false }}
