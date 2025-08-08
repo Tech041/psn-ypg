@@ -4,7 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaRegClock } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-const JobCard = ({ title, location, salary, posted, id }) => {
+const JobCard = ({ title, location, posted, id }) => {
   return (
     <Link
       to={`/job-details/${id}`}
@@ -13,8 +13,8 @@ const JobCard = ({ title, location, salary, posted, id }) => {
     >
       <div className="w-[20%]">
         <img
-          src="/hiring_img.webp"
-          alt="medical_logo"
+          src="/ypg_thumb.webp"
+          alt="job_logo"
           className="w-full h-[70px]"
         />
       </div>
