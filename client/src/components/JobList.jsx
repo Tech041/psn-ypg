@@ -39,7 +39,9 @@ const JobList = () => {
   };
 
   const filteredPost = async () => {
-    let postCopy = !jobIsLoading && jobs?.slice();
+    // let postCopy = !jobIsLoading && jobs?.slice();
+    let postCopy = Array.isArray(jobs) ? [...jobs] : [];
+
     if (search) {
       postCopy = postCopy?.filter((item) =>
         item?.title.toLowerCase().includes(search.toLowerCase())

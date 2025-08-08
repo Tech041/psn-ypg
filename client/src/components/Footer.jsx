@@ -139,7 +139,7 @@ const Footer = () => {
           <hr className="" />
           <p className="py-5 text-xs  text-center  ">
             Copyright &copy;PSN-YPG Lagos {new Date().getFullYear()} <br />
-            <span className="">All rights reserved.</span>
+            <span className="">Powered By Neltech.</span>
           </p>
         </div>
       </div>

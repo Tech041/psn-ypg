@@ -21,8 +21,8 @@ const About = () => {
             job-hunting experience among pharmacists.
           </p>
           <p className="py-2">
-            Designed and developed by Pharm Nelson who is a pharmacist and
-            software Engineer, this is his humble contribution to modernize
+            Designed and developed by  Pharm Nelson (Founder of NELTECH) who is a Pharmacist and
+            Software Engineer, this is his humble contribution to modernize
             pharmacy practise through technology.This platform is built for
             PSN-YPG Lagos chapter to connect pharmacists with the opportunities
             they deserve. PSN-YPG Job Portal simplifies the hiring process,
