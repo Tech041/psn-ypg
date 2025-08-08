@@ -130,16 +130,20 @@ const JobList = () => {
                       {jobItem.title}
                     </div>
                     <div>
+                      <span className={spanStyle}>Facility:</span>{" "}
+                      {jobItem.facility}
+                    </div>
+                    <div>
+                      <span className={spanStyle}>Location:</span>{" "}
+                      {jobItem.location}
+                    </div>
+                    <div>
                       <span className={spanStyle}>Salary:</span>{" "}
                       {jobItem.salary}
                     </div>
                     <div>
                       <span className={spanStyle}>Requirements:</span>{" "}
                       {jobItem.requirements}
-                    </div>
-                    <div>
-                      <span className={spanStyle}>Facility:</span>{" "}
-                      {jobItem.facility}
                     </div>
 
                     <div>
@@ -203,15 +207,19 @@ const JobList = () => {
                         {item.title}
                       </div>
                       <div>
+                        <span className={spanStyle}>Facility:</span>{" "}
+                        {item.facility}
+                      </div>
+                      <div>
+                        <span className={spanStyle}>Location:</span>{" "}
+                        {item.location}
+                      </div>
+                      <div>
                         <span className={spanStyle}>Salary:</span> {item.salary}
                       </div>
                       <div>
                         <span className={spanStyle}>Requirements:</span>{" "}
                         {item.requirements}
-                      </div>
-                      <div>
-                        <span className={spanStyle}>Facility:</span>{" "}
-                        {item.facility}
                       </div>
 
                       <div>
