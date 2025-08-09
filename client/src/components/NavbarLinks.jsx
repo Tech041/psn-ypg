@@ -1,8 +1,9 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { AiFillMedicineBox } from "react-icons/ai";
 import { BsFillBoxSeamFill } from "react-icons/bs";
 import { FcAbout } from "react-icons/fc";
 import { FiHome } from "react-icons/fi";
+import { LiaSchoolSolid } from "react-icons/lia";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
@@ -11,8 +12,6 @@ const listStyle =
 
 const NavbarLinks = () => {
   const { token } = useContext(AppContext);
- ;
-
   return (
     <nav className="">
       <ul className="flex justify-between items-center gap-3">
@@ -41,6 +40,12 @@ const NavbarLinks = () => {
             <BsFillBoxSeamFill size={20} />
           </span>
           <span className="text-sm">Jobs</span>
+        </NavLink>
+        <NavLink onClick={() => scrollTo(0, 0)} to={"/internships"} className={listStyle}>
+          <span className="flex items-center justify-center">
+            <LiaSchoolSolid size={20} />
+          </span>
+          <span className="text-sm">Internships</span>
         </NavLink>
         {token && (
           <NavLink

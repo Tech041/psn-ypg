@@ -1,4 +1,4 @@
-import React, { useContext,  useState } from "react";
+import React, { useContext, useState } from "react";
 import { assets } from "../assets/assets";
 import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
@@ -32,7 +32,6 @@ const Navbar = () => {
     }
   };
 
- 
   return (
     <header className=" fixed w-full h-[100px]  flex items-center  bg-gradient-to-tr from-white to bg-green-50 z-20 ">
       <div className="container">
@@ -73,6 +72,14 @@ const Navbar = () => {
                   className=""
                 >
                   <Link to={"/jobs"}>Jobs</Link>
+                </li>
+                <li
+                  onClick={() => {
+                    setOpen((prev) => !prev), scrollTo(0, 0);
+                  }}
+                  className=""
+                >
+                  <Link to={"/internships"}>Internships</Link>
                 </li>
                 {token && (
                   <li

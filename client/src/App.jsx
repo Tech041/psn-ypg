@@ -4,8 +4,6 @@ import Navbar from "./components/Navbar";
 import React from "react";
 import Footer from "./components/Footer";
 
-
-
 // Dynamic imports.
 const Home = React.lazy(() => import("./pages/Home"));
 const Login = React.lazy(() => import("./pages/Login"));
@@ -15,6 +13,7 @@ const SingleJob = React.lazy(() => import("./pages/SingleJob"));
 const WhyUs = React.lazy(() => import("./pages/WhyUs"));
 const OurBlog = React.lazy(() => import("./pages/OurBlog"));
 const About = React.lazy(() => import("./pages/About"));
+const Internships = React.lazy(() => import("./pages/Internships"));
 
 const App = () => {
   return (
@@ -30,6 +29,7 @@ const App = () => {
         <Route path="/our-blog" element={<OurBlog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
+        <Route path="/internships" element={<Internships />} />
       </Routes>
       <Footer />
     </div>
