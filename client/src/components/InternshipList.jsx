@@ -39,6 +39,7 @@ const InternshipList = () => {
   };
 
   const filteredPost = async () => {
+    // let postCopy = !jobIsLoading && jobs?.slice();
     let postCopy = Array.isArray(jobs) ? [...jobs] : [];
 
     if (search) {
@@ -49,6 +50,7 @@ const InternshipList = () => {
     setListed(
       postCopy.reverse().filter((item) => item.category === "internships")
     );
+
     setCurrentPage(1); // Reset to first page on search
   };
 
@@ -103,29 +105,30 @@ const InternshipList = () => {
             <div className="flex justify-between gap-4">
               {/* Job list */}
               <div className="flex-1 max-h-screen overflow-y-auto md:border-r-2">
-                {currentJobs?.map((item) => (
-                  <div
-                    onClick={() => handleJobId(item)}
-                    key={item._id}
-                    className={`my-3 py-2 px-2 hover:cursor-pointer ${
-                      jobItem?._id === item._id
-                        ? "bg-gray-100 border-l-2 border-green-500"
-                        : ""
-                    }`}
-                  >
-                    <div className="text-green-800 font-semibold">
-                      {item?.title}
+                {currentJobs &&
+                  currentJobs.map((item) => (
+                    <div
+                      onClick={() => handleJobId(item)}
+                      key={item._id}
+                      className={`my-3 py-2 px-2 hover:cursor-pointer ${
+                        jobItem?._id === item._id
+                          ? "bg-gray-100 border-l-2 border-green-500"
+                          : ""
+                      }`}
+                    >
+                      <div className="text-green-800 font-semibold">
+                        {item?.title}
+                      </div>
+                      <div className="italic text-sm text-gray-500">
+                        ₦ {item?.salary}
+                      </div>
                     </div>
-                    <div className="italic text-sm text-gray-500">
-                      ₦ {item?.salary}
-                    </div>
-                  </div>
-                ))}
+                  ))}
               </div>
 
               {/* Job details */}
               <div className="flex-1 max-h-screen overflow-y-auto">
-                {jobItem && (
+                {jobItem.category === "internships" && (
                   <div className="mt-5">
                     <div>
                       <span className={spanStyle}>Job Title:</span>{" "}

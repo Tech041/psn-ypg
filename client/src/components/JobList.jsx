@@ -48,6 +48,7 @@ const JobList = () => {
       );
     }
     setListed(postCopy.reverse());
+
     setCurrentPage(1); // Reset to first page on search
   };
 
