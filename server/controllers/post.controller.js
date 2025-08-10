@@ -2,15 +2,23 @@ import Post from "../models/post.model.js";
 
 export const postJob = async (req, res) => {
   try {
-    const { title, salary, requirements, facility, contact, location } =
-      req.body;
+    const {
+      title,
+      salary,
+      requirements,
+      facility,
+      contact,
+      location,
+      category,
+    } = req.body;
     if (
       !title ||
       !salary ||
       !requirements ||
       !facility ||
       !contact ||
-      !location
+      !location ||
+      !category
     ) {
       return res.status(400).json({ message: "Missing details" });
     }
@@ -22,6 +30,7 @@ export const postJob = async (req, res) => {
       facility,
       contact,
       location,
+      category,
     });
     return res
       .status(200)

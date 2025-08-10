@@ -11,9 +11,12 @@ const JobFormSchema = z.object({
   location: z.string().min(1, { message: "Location is required" }),
   requirements: z.string().min(1, { message: "Requirements is required" }),
   facility: z.string().min(1, { message: "Facility Name is required" }),
-  contact: z
-    .string()
-    .min(1, { message: "Contact is required" }),
+  contact: z.string().min(1, { message: "Contact is required" }),
+  category: z.enum(["jobs", "internships"], {
+    errorMap: () => ({
+      message: "Category must be either 'jobs' or 'internships'",
+    }),
+  }),
 });
 const JobForm = () => {
   const { token } = useContext(AppContext);
@@ -118,6 +121,25 @@ const JobForm = () => {
               />
               {errors.facility && (
                 <p className="text-red-600">{errors.facility.message}</p>
+              )}
+            </div>
+            <div className="w-full flex flex-col md:col-span-2">
+              <label htmlFor="category" className="mb-1 font-medium"></label>
+              <select
+                {...register("category")}
+                name="category"
+                id="category"
+                className="border rounded px-3 py-2 w-full"
+                defaultValue=""
+              >
+                <option value="" disabled>
+                  Select a category
+                </option>
+                <option value="jobs">Jobs</option>
+                <option value="internships">Internships</option>
+              </select>
+              {errors.category && (
+                <p className="text-red-600">{errors.category.message}</p>
               )}
             </div>
 

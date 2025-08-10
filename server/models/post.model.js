@@ -27,6 +27,11 @@ const postSchema = new Schema(
       type: String,
       required: true,
     },
+    category: {
+      type: String,
+      enum: ["jobs", "internships"],
+      default: "jobs",
+    },
   },
   { timestamps: true }
 );

@@ -63,6 +63,15 @@ const Footer = () => {
                       Browse Jobs
                     </Link>
                   </li>
+                  <li className="cursor-pointer py-1">
+                    <Link
+                      onClick={() => scrollTo(0, 0)}
+                      to={"/internships"}
+                      className=""
+                    >
+                      Internships
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -71,8 +71,15 @@ const SingleJob = () => {
           </div>
         </div>
         <div className="flex items-center justify-center py-4">
-          <Link to={"/jobs"} className="text-blue-500 underline">
-            View all jobs
+          <Link
+            to={`${
+              jobItem.category === "internships" ? "/internships" : "/jobs"
+            }`}
+            className="text-blue-500 underline"
+          >
+            {jobItem.category === "internships"
+              ? "View all Internships"
+              : " View all jobs"}
           </Link>
         </div>
       </div>
