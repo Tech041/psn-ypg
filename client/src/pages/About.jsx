@@ -1,6 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+const services = [
+  "E-commerce applications",
+  "Business landing pages",
+  "portfolio websites",
+  "real estate applications",
+  "dashboards",
+  "learning management systems",
+];
 
 const About = () => {
   return (
@@ -17,35 +25,44 @@ const About = () => {
             About MedHunt
           </h1>
           <p className="py-2">
-            PSN-YPG Job Portal, is a smart technology to create a better
-            job-hunting experience among pharmacists.
+            The PSN-YPG Job Portal is a smart, user-friendly platform designed
+            to make job hunting  and internship placement easier for pharmacists. Built specifically for
+            the of PSN-YPG Lagos chapter, it connects pharmacy professionals
+            with the opportunities they deserve—quickly and efficiently
           </p>
           <p className="py-2">
-            Designed and developed by Pharm Nelson{" "}
-            <span className="text-blue-600">(Founder of NELTECH)</span> who is
-            a Pharmacist and Software Engineer, this is his humble contribution
-            to modernize pharmacy practise through technology.This platform is
-            built for PSN-YPG Lagos chapter to connect pharmacists with the
-            opportunities they deserve. PSN-YPG Job Portal simplifies the hiring
-            process, enhances applicant visibility, and helps organizations find
-            talent faster.
+            Crafted by a Pharmacist who is equally a Software Engineer, this
+            portal is his way of blending tech with pharmacy practice. Through
+            his company,{" "}
+            <a
+              href="https://neltech.onrender.com"
+              target="_blank"
+              className="text-blue-600"
+            >
+              NELTECH
+            </a>
+            , where he builds modern solutions that solve real-world problems.
           </p>
-          <p className="py-2">
-            It’s more than a portal—it’s a purposeful solution born out of
-            real-world insight and a passion for innovation. Whether you're an
-            employer or job seeker, PSN-YPG Job Portal is here to make the
-            process easy, transparent, and efficient.
-          </p>
+          <h2 className="">
+            What we build at NELTECH include but not limited to:
+          </h2>
+          <ul className="">
+            {services.map((service, index) => (
+              <li key={index} className="py-1 capitalize text-green-900">
+                {service}
+              </li>
+            ))}
+          </ul>
           <div className="">
             <h2 className="">
               He is open for collaborations and ready to solve real-world
               problems through tech. Call or whatsapp
             </h2>
-            <p className="">08030507512</p>
+            <p className="py-1">📞 Call or WhatsApp: 08030507512</p>
             <p className="">
-              Website:{" "}
+              🌐 Visit:
               <a
-                className="underline text-blue-700"
+                className="underline text-blue-700 pl-2"
                 href="https://neltech.onrender.com"
                 target="_blank"
               >
