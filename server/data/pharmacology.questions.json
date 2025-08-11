@@ -1,0 +1,644 @@
+{
+  "questions": [
+    {
+      "question": "Which drug is classified as a beta-blocker?",
+      "options": ["Amlodipine", "Losartan", "Propranolol", "Furosemide"],
+      "correctAnswerIndex": 2,
+      "explanation": "Propranolol is a non-selective beta-blocker."
+    },
+    {
+      "question": "What is the mechanism of action of ACE inhibitors?",
+      "options": [
+        "Block calcium channels",
+        "Inhibit angiotensin-converting enzyme",
+        "Block beta receptors",
+        "Increase sodium reabsorption"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ACE inhibitors prevent the conversion of angiotensin I to angiotensin II, reducing vasoconstriction."
+    },
+    {
+      "question": "Which of the following is a loop diuretic?",
+      "options": [
+        "Hydrochlorothiazide",
+        "Furosemide",
+        "Spironolactone",
+        "Amiloride"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Furosemide inhibits the Na-K-2Cl transporter in the loop of Henle."
+    },
+    {
+      "question": "Which drug is an HMG-CoA reductase inhibitor?",
+      "options": ["Atorvastatin", "Ezetimibe", "Fenofibrate", "Niacin"],
+      "correctAnswerIndex": 0,
+      "explanation": "Atorvastatin inhibits HMG-CoA reductase, reducing cholesterol synthesis."
+    },
+    {
+      "question": "Which of these is a calcium channel blocker?",
+      "options": ["Metoprolol", "Nifedipine", "Losartan", "Captopril"],
+      "correctAnswerIndex": 1,
+      "explanation": "Nifedipine blocks L-type calcium channels, causing vasodilation."
+    },
+    {
+      "question": "Which of the following is a selective beta-1 blocker?",
+      "options": ["Propranolol", "Atenolol", "Carvedilol", "Labetalol"],
+      "correctAnswerIndex": 1,
+      "explanation": "Atenolol selectively blocks beta-1 adrenergic receptors in the heart."
+    },
+    {
+      "question": "Which drug is used as a first-line treatment for chronic hypertension in pregnancy?",
+      "options": ["Amlodipine", "Methyldopa", "Captopril", "Losartan"],
+      "correctAnswerIndex": 1,
+      "explanation": "Methyldopa is preferred in pregnancy because it has a good safety profile for the fetus."
+    },
+    {
+      "question": "Which antiplatelet drug irreversibly inhibits COX-1 and COX-2?",
+      "options": ["Clopidogrel", "Aspirin", "Dipyridamole", "Ticagrelor"],
+      "correctAnswerIndex": 1,
+      "explanation": "Aspirin irreversibly inhibits cyclooxygenase, reducing thromboxane A2 production."
+    },
+    {
+      "question": "Which of the following is an angiotensin receptor blocker (ARB)?",
+      "options": ["Captopril", "Valsartan", "Metoprolol", "Furosemide"],
+      "correctAnswerIndex": 1,
+      "explanation": "Valsartan blocks angiotensin II receptors, causing vasodilation."
+    },
+    {
+      "question": "Which drug is the preferred treatment for acute angina relief?",
+      "options": ["Atenolol", "Nitroglycerin", "Verapamil", "Ranolazine"],
+      "correctAnswerIndex": 1,
+      "explanation": "Nitroglycerin causes rapid vasodilation by releasing nitric oxide."
+    },
+    {
+      "question": "Which of the following is a direct thrombin inhibitor?",
+      "options": ["Warfarin", "Dabigatran", "Heparin", "Enoxaparin"],
+      "correctAnswerIndex": 1,
+      "explanation": "Dabigatran directly inhibits thrombin, preventing fibrin clot formation."
+    },
+    {
+      "question": "Which vitamin deficiency is associated with prolonged use of isoniazid?",
+      "options": ["Vitamin B1", "Vitamin B2", "Vitamin B6", "Vitamin B12"],
+      "correctAnswerIndex": 2,
+      "explanation": "Isoniazid can cause pyridoxine (vitamin B6) deficiency leading to neuropathy."
+    },
+    {
+      "question": "Which of the following drugs is an aminoglycoside antibiotic?",
+      "options": ["Gentamicin", "Ciprofloxacin", "Amoxicillin", "Azithromycin"],
+      "correctAnswerIndex": 0,
+      "explanation": "Gentamicin is an aminoglycoside that inhibits bacterial protein synthesis."
+    },
+    {
+      "question": "Which drug is a first-line treatment for generalized tonic-clonic seizures?",
+      "options": ["Diazepam", "Valproic acid", "Gabapentin", "Ethosuximide"],
+      "correctAnswerIndex": 1,
+      "explanation": "Valproic acid is effective for generalized seizures by increasing GABA levels."
+    },
+    {
+      "question": "Which of the following is a macrolide antibiotic?",
+      "options": [
+        "Erythromycin",
+        "Ceftriaxone",
+        "Tetracycline",
+        "Metronidazole"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Erythromycin inhibits bacterial protein synthesis by binding the 50S ribosome."
+    },
+    {
+      "question": "Which drug is a dopamine precursor used in Parkinson's disease?",
+      "options": ["Bromocriptine", "Selegiline", "Levodopa", "Amantadine"],
+      "correctAnswerIndex": 2,
+      "explanation": "Levodopa is converted to dopamine in the brain to improve motor symptoms."
+    },
+    {
+      "question": "Which benzodiazepine is preferred for status epilepticus?",
+      "options": ["Diazepam", "Lorazepam", "Clonazepam", "Alprazolam"],
+      "correctAnswerIndex": 1,
+      "explanation": "Lorazepam is preferred because it has a longer duration of action in the CNS."
+    },
+    {
+      "question": "Which of these drugs is a selective serotonin reuptake inhibitor (SSRI)?",
+      "options": ["Amitriptyline", "Fluoxetine", "Venlafaxine", "Bupropion"],
+      "correctAnswerIndex": 1,
+      "explanation": "Fluoxetine blocks serotonin reuptake, increasing serotonin availability."
+    },
+    {
+      "question": "Which drug is used as an antidote for opioid overdose?",
+      "options": ["Flumazenil", "Naloxone", "Atropine", "Acetylcysteine"],
+      "correctAnswerIndex": 1,
+      "explanation": "Naloxone is an opioid receptor antagonist that reverses opioid effects."
+    },
+    {
+      "question": "Which drug is a potassium-sparing diuretic?",
+      "options": [
+        "Furosemide",
+        "Hydrochlorothiazide",
+        "Spironolactone",
+        "Mannitol"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Spironolactone blocks aldosterone, reducing sodium reabsorption and potassium excretion."
+    },
+    {
+      "question": "Which drug is an antimuscarinic used to treat overactive bladder?",
+      "options": ["Oxybutynin", "Pilocarpine", "Bethanechol", "Neostigmine"],
+      "correctAnswerIndex": 0,
+      "explanation": "Oxybutynin blocks muscarinic receptors in the bladder to reduce urgency and frequency."
+    },
+    {
+      "question": "Which of the following is a long-acting insulin preparation?",
+      "options": [
+        "Insulin lispro",
+        "Insulin aspart",
+        "Insulin glargine",
+        "Regular insulin"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Insulin glargine provides a steady basal insulin level for 24 hours."
+    },
+    {
+      "question": "Which drug is a proton pump inhibitor (PPI)?",
+      "options": ["Ranitidine", "Omeprazole", "Sucralfate", "Misoprostol"],
+      "correctAnswerIndex": 1,
+      "explanation": "Omeprazole irreversibly inhibits the H+/K+ ATPase in gastric parietal cells."
+    },
+    {
+      "question": "Which of the following is a thiazide diuretic?",
+      "options": ["Furosemide", "Chlorthalidone", "Mannitol", "Amiloride"],
+      "correctAnswerIndex": 1,
+      "explanation": "Chlorthalidone inhibits sodium reabsorption in the distal convoluted tubule."
+    },
+    {
+      "question": "Which drug is used for prophylaxis against malaria?",
+      "options": ["Artemether", "Quinine", "Chloroquine", "Artesunate"],
+      "correctAnswerIndex": 2,
+      "explanation": "Chloroquine is effective for prophylaxis in areas without chloroquine resistance."
+    },
+    {
+      "question": "Which drug is a 5-alpha reductase inhibitor for benign prostatic hyperplasia?",
+      "options": ["Tamsulosin", "Finasteride", "Dutasteride", "Prazosin"],
+      "correctAnswerIndex": 1,
+      "explanation": "Finasteride inhibits 5-alpha reductase, reducing dihydrotestosterone levels."
+    },
+    {
+      "question": "Which antiarrhythmic drug is a class III potassium channel blocker?",
+      "options": ["Amiodarone", "Lidocaine", "Propranolol", "Verapamil"],
+      "correctAnswerIndex": 0,
+      "explanation": "Amiodarone prolongs repolarization by blocking potassium channels."
+    },
+    {
+      "question": "Which of the following is an opioid analgesic?",
+      "options": ["Ibuprofen", "Morphine", "Paracetamol", "Aspirin"],
+      "correctAnswerIndex": 1,
+      "explanation": "Morphine binds to mu-opioid receptors to provide pain relief."
+    },
+    {
+      "question": "Which drug is an antiemetic acting on serotonin receptors?",
+      "options": ["Metoclopramide", "Ondansetron", "Promethazine", "Hyoscine"],
+      "correctAnswerIndex": 1,
+      "explanation": "Ondansetron blocks 5-HT3 receptors in the chemoreceptor trigger zone."
+    },
+    {
+      "question": "Which vitamin is used to reverse warfarin toxicity?",
+      "options": ["Vitamin A", "Vitamin D", "Vitamin E", "Vitamin K"],
+      "correctAnswerIndex": 3,
+      "explanation": "Vitamin K is essential for the synthesis of clotting factors inhibited by warfarin."
+    },
+    {
+      "question": "Which drug is a xanthine oxidase inhibitor used in gout?",
+      "options": ["Colchicine", "Allopurinol", "Probenecid", "Febuxostat"],
+      "correctAnswerIndex": 1,
+      "explanation": "Allopurinol reduces uric acid production by inhibiting xanthine oxidase."
+    },
+    {
+      "question": "Which drug is used for emergency treatment of anaphylaxis?",
+      "options": [
+        "Diphenhydramine",
+        "Epinephrine",
+        "Hydrocortisone",
+        "Salbutamol"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Epinephrine acts rapidly to reverse airway constriction and hypotension."
+    },
+    {
+      "question": "Which of the following drugs is an inhaled corticosteroid?",
+      "options": ["Budesonide", "Montelukast", "Salmeterol", "Theophylline"],
+      "correctAnswerIndex": 0,
+      "explanation": "Budesonide reduces airway inflammation in asthma and COPD."
+    },
+    {
+      "question": "Which drug is a leukotriene receptor antagonist?",
+      "options": ["Salmeterol", "Montelukast", "Budesonide", "Ipratropium"],
+      "correctAnswerIndex": 1,
+      "explanation": "Montelukast blocks leukotriene receptors to reduce bronchoconstriction."
+    },
+    {
+      "question": "Which antibiotic can cause permanent discoloration of teeth in children?",
+      "options": [
+        "Tetracycline",
+        "Amoxicillin",
+        "Clarithromycin",
+        "Cephalexin"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Tetracyclines bind to calcium in developing teeth, causing discoloration."
+    },
+    {
+      "question": "Which antitubercular drug can cause optic neuritis?",
+      "options": ["Rifampicin", "Isoniazid", "Ethambutol", "Pyrazinamide"],
+      "correctAnswerIndex": 2,
+      "explanation": "Ethambutol toxicity can cause visual disturbances and optic neuritis."
+    },
+    {
+      "question": "Which drug is a reversible cholinesterase inhibitor used in myasthenia gravis?",
+      "options": ["Neostigmine", "Atropine", "Pralidoxime", "Scopolamine"],
+      "correctAnswerIndex": 0,
+      "explanation": "Neostigmine increases acetylcholine availability at neuromuscular junctions."
+    },
+    {
+      "question": "Which drug is used as an antidote for benzodiazepine overdose?",
+      "options": ["Naloxone", "Atropine", "Flumazenil", "Acetylcysteine"],
+      "correctAnswerIndex": 2,
+      "explanation": "Flumazenil is a competitive benzodiazepine receptor antagonist."
+    },
+    {
+      "question": "Which drug is a bisphosphonate used for osteoporosis?",
+      "options": ["Raloxifene", "Calcitonin", "Alendronate", "Denosumab"],
+      "correctAnswerIndex": 2,
+      "explanation": "Alendronate inhibits osteoclast-mediated bone resorption."
+    },
+    {
+      "question": "Which drug is an antiviral used in the treatment of influenza?",
+      "options": ["Acyclovir", "Zidovudine", "Oseltamivir", "Lamivudine"],
+      "correctAnswerIndex": 2,
+      "explanation": "Oseltamivir inhibits neuraminidase, preventing viral release from host cells."
+    },
+    {
+      "question": "Which of the following is an H2 receptor antagonist?",
+      "options": ["Omeprazole", "Ranitidine", "Misoprostol", "Sucralfate"],
+      "correctAnswerIndex": 1,
+      "explanation": "Ranitidine blocks histamine H2 receptors on gastric parietal cells to reduce acid secretion."
+    },
+    {
+      "question": "Which drug is a dopamine agonist used in hyperprolactinemia?",
+      "options": [
+        "Bromocriptine",
+        "Carbamazepine",
+        "Pramipexole",
+        "Haloperidol"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Bromocriptine activates dopamine receptors, suppressing prolactin secretion."
+    },
+    {
+      "question": "Which drug is a non-selective beta and alpha blocker used in heart failure?",
+      "options": ["Metoprolol", "Carvedilol", "Esmolol", "Bisoprolol"],
+      "correctAnswerIndex": 1,
+      "explanation": "Carvedilol blocks both beta and alpha receptors, reducing heart workload."
+    },
+    {
+      "question": "Which drug is used as a chelating agent for lead poisoning?",
+      "options": ["Deferoxamine", "Dimercaprol", "Succimer", "Penicillamine"],
+      "correctAnswerIndex": 2,
+      "explanation": "Succimer binds lead and enhances its urinary excretion."
+    },
+    {
+      "question": "Which drug is a serotonin-norepinephrine reuptake inhibitor (SNRI)?",
+      "options": ["Fluoxetine", "Venlafaxine", "Bupropion", "Mirtazapine"],
+      "correctAnswerIndex": 1,
+      "explanation": "Venlafaxine inhibits the reuptake of both serotonin and norepinephrine."
+    },
+    {
+      "question": "Which drug is used as an antidote for acetaminophen toxicity?",
+      "options": ["Atropine", "Acetylcysteine", "Flumazenil", "Naloxone"],
+      "correctAnswerIndex": 1,
+      "explanation": "Acetylcysteine replenishes glutathione to detoxify harmful metabolites."
+    },
+    {
+      "question": "Which drug is an antiandrogen used in prostate cancer?",
+      "options": ["Flutamide", "Finasteride", "Leuprolide", "Spironolactone"],
+      "correctAnswerIndex": 0,
+      "explanation": "Flutamide blocks androgen receptors, inhibiting tumor growth."
+    },
+    {
+      "question": "Which antimalarial drug is safe for use in pregnancy?",
+      "options": ["Primaquine", "Chloroquine", "Doxycycline", "Mefloquine"],
+      "correctAnswerIndex": 1,
+      "explanation": "Chloroquine is considered safe during pregnancy for malaria prevention."
+    },
+    {
+      "question": "Which drug is a monoclonal antibody used in breast cancer treatment?",
+      "options": ["Trastuzumab", "Tamoxifen", "Letrozole", "Anastrozole"],
+      "correctAnswerIndex": 0,
+      "explanation": "Trastuzumab targets HER2 receptors in HER2-positive breast cancer."
+    },
+    {
+      "question": "Which of the following drugs is an alkylating agent used in chemotherapy?",
+      "options": [
+        "Cyclophosphamide",
+        "Methotrexate",
+        "Vincristine",
+        "Doxorubicin"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Cyclophosphamide crosslinks DNA, preventing cell replication."
+    },
+    {
+      "question": "Which drug inhibits dihydrofolate reductase in bacteria?",
+      "options": [
+        "Trimethoprim",
+        "Ciprofloxacin",
+        "Erythromycin",
+        "Gentamicin"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Trimethoprim blocks folate synthesis, impairing bacterial DNA replication."
+    },
+    {
+      "question": "Which drug is used as an antipyretic but has minimal anti-inflammatory effect?",
+      "options": ["Ibuprofen", "Aspirin", "Paracetamol", "Naproxen"],
+      "correctAnswerIndex": 2,
+      "explanation": "Paracetamol reduces fever and pain but has little anti-inflammatory activity."
+    },
+    {
+      "question": "Which antipsychotic drug is associated with agranulocytosis risk?",
+      "options": ["Haloperidol", "Olanzapine", "Clozapine", "Risperidone"],
+      "correctAnswerIndex": 2,
+      "explanation": "Clozapine can cause severe neutropenia, requiring blood monitoring."
+    },
+    {
+      "question": "Which drug is an antithyroid medication that inhibits thyroid hormone synthesis?",
+      "options": [
+        "Levothyroxine",
+        "Methimazole",
+        "Liothyronine",
+        "Propranolol"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Methimazole inhibits thyroid peroxidase, reducing T3 and T4 synthesis."
+    },
+    {
+      "question": "Which of these drugs is a protease inhibitor used in HIV treatment?",
+      "options": ["Efavirenz", "Zidovudine", "Ritonavir", "Lamivudine"],
+      "correctAnswerIndex": 2,
+      "explanation": "Ritonavir inhibits HIV protease, preventing viral protein maturation."
+    },
+    {
+      "question": "Which of the following is a selective estrogen receptor modulator (SERM)?",
+      "options": [
+        "Tamoxifen",
+        "Letrozole",
+        "Raloxifene",
+        "Both Tamoxifen and Raloxifene"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Both Tamoxifen and Raloxifene selectively block or activate estrogen receptors depending on tissue."
+    },
+    {
+      "question": "Which antibiotic inhibits bacterial DNA gyrase?",
+      "options": ["Ciprofloxacin", "Erythromycin", "Amoxicillin", "Vancomycin"],
+      "correctAnswerIndex": 0,
+      "explanation": "Ciprofloxacin inhibits DNA gyrase and topoisomerase IV, blocking DNA replication."
+    },
+    {
+      "question": "Which drug is used to treat opioid-induced constipation?",
+      "options": ["Lactulose", "Methylnaltrexone", "Senna", "Bisacodyl"],
+      "correctAnswerIndex": 1,
+      "explanation": "Methylnaltrexone is a peripherally acting opioid antagonist that relieves constipation without affecting analgesia."
+    },
+    {
+      "question": "Which drug is a first-line treatment for absence seizures?",
+      "options": [
+        "Valproic acid",
+        "Carbamazepine",
+        "Ethosuximide",
+        "Phenytoin"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Ethosuximide reduces T-type calcium currents in thalamic neurons."
+    },
+    {
+      "question": "Which of the following is a non-benzodiazepine hypnotic?",
+      "options": ["Diazepam", "Zolpidem", "Lorazepam", "Clonazepam"],
+      "correctAnswerIndex": 1,
+      "explanation": "Zolpidem acts on benzodiazepine receptors but is chemically unrelated to benzodiazepines."
+    },
+    {
+      "question": "Which antiarrhythmic drug is a class IC sodium channel blocker?",
+      "options": ["Flecainide", "Amiodarone", "Sotalol", "Procainamide"],
+      "correctAnswerIndex": 0,
+      "explanation": "Flecainide slows conduction by blocking sodium channels strongly."
+    },
+    {
+      "question": "Which diuretic can cause gynecomastia as a side effect?",
+      "options": [
+        "Furosemide",
+        "Spironolactone",
+        "Hydrochlorothiazide",
+        "Mannitol"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Spironolactone has antiandrogenic effects leading to gynecomastia."
+    },
+    {
+      "question": "Which drug is an inhaled short-acting beta-2 agonist?",
+      "options": ["Salmeterol", "Formoterol", "Salbutamol", "Ipratropium"],
+      "correctAnswerIndex": 2,
+      "explanation": "Salbutamol provides quick relief of bronchospasm in asthma."
+    },
+    {
+      "question": "Which of the following is an antifungal that inhibits ergosterol synthesis?",
+      "options": ["Amphotericin B", "Fluconazole", "Griseofulvin", "Nystatin"],
+      "correctAnswerIndex": 1,
+      "explanation": "Fluconazole inhibits fungal cytochrome P450, blocking ergosterol synthesis."
+    },
+    {
+      "question": "Which drug is used to treat iron-deficiency anemia?",
+      "options": [
+        "Folic acid",
+        "Cyanocobalamin",
+        "Ferrous sulfate",
+        "Erythropoietin"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Ferrous sulfate replenishes iron stores for hemoglobin synthesis."
+    },
+    {
+      "question": "Which drug is a direct oral factor Xa inhibitor?",
+      "options": ["Warfarin", "Apixaban", "Heparin", "Argatroban"],
+      "correctAnswerIndex": 1,
+      "explanation": "Apixaban directly inhibits factor Xa, preventing thrombin formation."
+    },
+    {
+      "question": "Which of the following drugs is a reversible MAO-A inhibitor?",
+      "options": ["Phenelzine", "Moclobemide", "Tranylcypromine", "Selegiline"],
+      "correctAnswerIndex": 1,
+      "explanation": "Moclobemide reversibly inhibits monoamine oxidase A, increasing serotonin and norepinephrine."
+    },
+    {
+      "question": "Which drug is used to treat motion sickness?",
+      "options": ["Ondansetron", "Hyoscine", "Metoclopramide", "Domperidone"],
+      "correctAnswerIndex": 1,
+      "explanation": "Hyoscine (scopolamine) blocks muscarinic receptors in the vestibular system."
+    },
+    {
+      "question": "Which antitubercular drug causes orange discoloration of body fluids?",
+      "options": ["Isoniazid", "Rifampicin", "Ethambutol", "Pyrazinamide"],
+      "correctAnswerIndex": 1,
+      "explanation": "Rifampicin imparts an orange color to urine, sweat, and tears."
+    },
+    {
+      "question": "Which drug is an NMDA receptor antagonist used in Alzheimer's disease?",
+      "options": ["Donepezil", "Memantine", "Rivastigmine", "Galantamine"],
+      "correctAnswerIndex": 1,
+      "explanation": "Memantine blocks NMDA receptors to reduce excitotoxicity."
+    },
+    {
+      "question": "Which of the following drugs is a phosphodiesterase type 5 inhibitor?",
+      "options": ["Tadalafil", "Sildenafil", "Vardenafil", "All of the above"],
+      "correctAnswerIndex": 3,
+      "explanation": "All listed drugs inhibit PDE5, enhancing nitric oxide-mediated vasodilation."
+    },
+    {
+      "question": "Which drug is used in acute migraine attacks?",
+      "options": ["Propranolol", "Sumatriptan", "Amitriptyline", "Topiramate"],
+      "correctAnswerIndex": 1,
+      "explanation": "Sumatriptan is a serotonin 5-HT1B/1D receptor agonist that constricts cranial blood vessels."
+    },
+    {
+      "question": "Which anti-asthma drug blocks IgE-mediated mast cell activation?",
+      "options": ["Omalizumab", "Montelukast", "Salmeterol", "Theophylline"],
+      "correctAnswerIndex": 0,
+      "explanation": "Omalizumab is a monoclonal antibody that binds IgE and prevents allergic responses."
+    },
+    {
+      "question": "Which diuretic is useful in acute cerebral edema?",
+      "options": [
+        "Mannitol",
+        "Furosemide",
+        "Spironolactone",
+        "Hydrochlorothiazide"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Mannitol is an osmotic diuretic that reduces intracranial pressure."
+    },
+    {
+      "question": "Which drug inhibits platelet ADP receptors?",
+      "options": ["Clopidogrel", "Aspirin", "Heparin", "Warfarin"],
+      "correctAnswerIndex": 0,
+      "explanation": "Clopidogrel blocks P2Y12 receptors on platelets, inhibiting aggregation."
+    },
+    {
+      "question": "Which antiviral is used to treat herpes simplex virus infections?",
+      "options": ["Oseltamivir", "Acyclovir", "Ribavirin", "Zidovudine"],
+      "correctAnswerIndex": 1,
+      "explanation": "Acyclovir inhibits viral DNA polymerase, preventing replication."
+    },
+    {
+      "question": "Which drug is used in organophosphate poisoning?",
+      "options": [
+        "Atropine and Pralidoxime",
+        "Flumazenil",
+        "Naloxone",
+        "Epinephrine"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Atropine blocks muscarinic effects, and pralidoxime reactivates cholinesterase."
+    },
+    {
+      "question": "Which drug is a long-acting muscarinic antagonist used in COPD?",
+      "options": ["Ipratropium", "Tiotropium", "Aclidinium", "Glycopyrronium"],
+      "correctAnswerIndex": 1,
+      "explanation": "Tiotropium provides prolonged bronchodilation in COPD."
+    },
+    {
+      "question": "Which antibiotic inhibits bacterial cell wall synthesis by binding D-Ala-D-Ala?",
+      "options": ["Vancomycin", "Amoxicillin", "Ceftriaxone", "Gentamicin"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vancomycin binds to peptidoglycan precursors, blocking cell wall synthesis."
+    },
+    {
+      "question": "Which immunosuppressant inhibits calcineurin in T cells?",
+      "options": [
+        "Tacrolimus",
+        "Azathioprine",
+        "Sirolimus",
+        "Cyclophosphamide"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Tacrolimus prevents IL-2 transcription by inhibiting calcineurin."
+    },
+    {
+      "question": "Which drug inhibits dipeptidyl peptidase-4 (DPP-4) in type 2 diabetes?",
+      "options": ["Sitagliptin", "Metformin", "Pioglitazone", "Gliclazide"],
+      "correctAnswerIndex": 0,
+      "explanation": "Sitagliptin increases incretin levels by inhibiting DPP-4."
+    },
+    {
+      "question": "Which drug is a P2Y12 receptor antagonist used after stent placement?",
+      "options": ["Ticagrelor", "Warfarin", "Aspirin", "Enoxaparin"],
+      "correctAnswerIndex": 0,
+      "explanation": "Ticagrelor inhibits platelet activation and aggregation by blocking P2Y12 receptors."
+    },
+    {
+      "question": "Which drug is an SGLT2 inhibitor used in diabetes?",
+      "options": ["Canagliflozin", "Metformin", "Gliclazide", "Acarbose"],
+      "correctAnswerIndex": 0,
+      "explanation": "Canagliflozin blocks glucose reabsorption in renal tubules, increasing excretion."
+    },
+    {
+      "question": "Which drug is used to prevent chemotherapy-induced nausea and vomiting?",
+      "options": [
+        "Ondansetron",
+        "Metoclopramide",
+        "Promethazine",
+        "Dexamethasone"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Ondansetron blocks serotonin receptors in the GI tract and brain."
+    },
+    {
+      "question": "Which of the following is a reversible COX-1 and COX-2 inhibitor?",
+      "options": ["Aspirin", "Ibuprofen", "Celecoxib", "Acetaminophen"],
+      "correctAnswerIndex": 1,
+      "explanation": "Ibuprofen reversibly inhibits cyclooxygenase enzymes to reduce inflammation and pain."
+    },
+    {
+      "question": "Which beta-blocker is also an alpha-blocker?",
+      "options": ["Propranolol", "Atenolol", "Carvedilol", "Metoprolol"],
+      "correctAnswerIndex": 2,
+      "explanation": "Carvedilol blocks both beta and alpha receptors."
+    },
+    {
+      "question": "Which drug is a GLP-1 receptor agonist used in type 2 diabetes?",
+      "options": ["Exenatide", "Metformin", "Gliclazide", "Acarbose"],
+      "correctAnswerIndex": 0,
+      "explanation": "Exenatide mimics GLP-1, stimulating insulin release and reducing glucagon."
+    },
+    {
+      "question": "Which antipsychotic drug is associated with the highest risk of weight gain?",
+      "options": ["Haloperidol", "Olanzapine", "Risperidone", "Quetiapine"],
+      "correctAnswerIndex": 1,
+      "explanation": "Olanzapine is known for causing significant weight gain and metabolic effects."
+    },
+    {
+      "question": "Which antiarrhythmic drug blocks sodium, potassium, and calcium channels?",
+      "options": ["Amiodarone", "Flecainide", "Sotalol", "Verapamil"],
+      "correctAnswerIndex": 0,
+      "explanation": "Amiodarone has broad antiarrhythmic action affecting multiple ion channels."
+    },
+    {
+      "question": "Which drug inhibits bacterial folic acid synthesis by competing with PABA?",
+      "options": [
+        "Sulfamethoxazole",
+        "Ciprofloxacin",
+        "Amoxicillin",
+        "Erythromycin"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Sulfamethoxazole is a sulfonamide that blocks dihydropteroate synthase."
+    }
+  ]
+}
