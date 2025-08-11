@@ -44,9 +44,15 @@ export const postJob = async (req, res) => {
 export const fetchAllJobs = async (req, res) => {
   try {
     const allJobs = await Post.find({});
-    return res
-      .status(200)
-      .json({ success: true, message: "All Jobs Fetched", allJobs });
+    const jobPosts = allJobs.filter((job) => job.category === "jobs");
+    const internPosts = allJobs.filter((job) => job.category === "internships");
+
+    return res.status(200).json({
+      success: true,
+      message: "All Jobs Fetched",
+      jobPosts,
+      internPosts,
+    });
   } catch (error) {
     console.log(error);
     return res.status(500).json({ message: "Something went wrong" });

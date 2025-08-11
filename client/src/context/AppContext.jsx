@@ -11,8 +11,10 @@ export const AppContextProvider = ({ children }) => {
   const [jobs, setJobs] = useState([]);
   const [jobIsLoading, setJobIsLoading] = useState(true);
   const [jobItem, setJobItem] = useState(null);
+  const [internshipItem, setInternshipItem] = useState(null);
   const [search, setSearch] = useState("");
   const [listed, setListed] = useState([]);
+  const [internship, setInternship] = useState([]);
   const [token, setToken] = useState(localStorage.getItem("token") || null);
 
   const navigate = useNavigate();
@@ -40,9 +42,13 @@ export const AppContextProvider = ({ children }) => {
   const fetchAllJobs = async () => {
     const { data } = await apiRequest.get("/api/fetch-jobs");
     if (data.success) {
-      setJobs(data.allJobs);
+      console.log("intern", data.internPosts);
+      console.log("jobs", data.jobPosts);
+      setJobs(data.jobPosts);
+      setInternship(data.internPosts);
       setJobIsLoading(false);
-      setJobItem(data.allJobs[data.allJobs.length-1]); // Default to first job
+      setInternshipItem(data.internPosts[data.internPosts.length - 1]); // Default to first internship
+      setJobItem(data.jobPosts[data.jobPosts.length - 1]); // Default to first job
     }
   };
 
@@ -52,6 +58,10 @@ export const AppContextProvider = ({ children }) => {
 
   const value = {
     token,
+    internship,
+    setInternship,
+    internshipItem,
+    setInternshipItem,
     setToken,
     listed,
     setListed,

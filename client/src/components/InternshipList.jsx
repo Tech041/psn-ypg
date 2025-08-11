@@ -11,27 +11,28 @@ const spanStyle = "font-semibold text-lg py-2";
 const InternshipList = () => {
   const {
     jobIsLoading,
-    jobItem,
+    internshipItem,
     search,
-    jobs,
-    listed,
-    setListed,
+    internship,
     fetchAllJobs,
-    setJobItem,
+    setInternshipItem,
     deleteJob,
     token,
   } = useContext(AppContext);
 
   const [openAccordionId, setOpenAccordionId] = useState(null);
+  const [listed, setListed] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const jobsPerPage = 6;
+
+  console.log("internship is", internship);
 
   useEffect(() => {
     fetchAllJobs();
   }, []);
 
   const handleJobId = (item) => {
-    setJobItem(item);
+    setInternshipItem(item);
   };
 
   const toggleAccordion = (id) => {
@@ -40,23 +41,21 @@ const InternshipList = () => {
 
   const filteredPost = async () => {
     // let postCopy = !jobIsLoading && jobs?.slice();
-    let postCopy = Array.isArray(jobs) ? [...jobs] : [];
+    let postCopy = Array.isArray(internship) ? [...internship] : [];
 
     if (search) {
       postCopy = postCopy?.filter((item) =>
         item?.title.toLowerCase().includes(search.toLowerCase())
       );
     }
-    setListed(
-      postCopy.reverse().filter((item) => item.category === "internships")
-    );
+    setListed(postCopy.reverse());
 
     setCurrentPage(1); // Reset to first page on search
   };
 
   useEffect(() => {
     filteredPost();
-  }, [search, jobs]);
+  }, [search, internship]);
 
   // Pagination logic
   const indexOfLastJob = currentPage * jobsPerPage;
@@ -97,6 +96,15 @@ const InternshipList = () => {
   return (
     <section className="w-full h-full">
       <div className="container">
+        <h1
+          className={`${
+            internship.length === 0
+              ? "block text-center text-red-600 text-lg"
+              : "hidden"
+          }`}
+        >
+          No internships yet, check back soon!!!
+        </h1>
         {/* Desktop view */}
         {jobIsLoading ? (
           <Spinner />
@@ -111,7 +119,7 @@ const InternshipList = () => {
                       onClick={() => handleJobId(item)}
                       key={item._id}
                       className={`my-3 py-2 px-2 hover:cursor-pointer ${
-                        jobItem?._id === item._id
+                        internshipItem?._id === item._id
                           ? "bg-gray-100 border-l-2 border-green-500"
                           : ""
                       }`}
@@ -128,43 +136,43 @@ const InternshipList = () => {
 
               {/* Job details */}
               <div className="flex-1 max-h-screen overflow-y-auto">
-                {jobItem.category === "internships" && (
+                {internshipItem && (
                   <div className="mt-5">
                     <div>
                       <span className={spanStyle}>Job Title:</span>{" "}
-                      {jobItem.title}
+                      {internshipItem.title}
                     </div>
                     <div>
                       <span className={spanStyle}>Facility:</span>{" "}
-                      {jobItem.facility}
+                      {internshipItem.facility}
                     </div>
                     <div>
                       <span className={spanStyle}>Location:</span>{" "}
-                      {jobItem.location}
+                      {internshipItem.location}
                     </div>
                     <div>
                       <span className={spanStyle}>Salary:</span>{" "}
-                      {jobItem.salary}
+                      {internshipItem.salary}
                     </div>
                     <div>
                       <span className={spanStyle}>Requirements:</span>{" "}
-                      {jobItem.requirements}
+                      {internshipItem.requirements}
                     </div>
 
                     <div>
                       <span className={spanStyle}>Contact:</span>{" "}
-                      {jobItem.contact}
+                      {internshipItem.contact}
                     </div>
                     <div>
                       <span className={spanStyle}>Posted:</span>{" "}
-                      {formatDistanceToNow(new Date(jobItem.createdAt), {
+                      {formatDistanceToNow(new Date(internshipItem.createdAt), {
                         addSuffix: true,
                       })}
                     </div>
                     {token && (
                       <div className="mt-4 pt-4 flex justify-center mb-4">
                         <button
-                          onClick={() => deleteJob(jobItem._id)}
+                          onClick={() => deleteJob(internshipItem._id)}
                           className="bg-blue-600 hover:bg-blue-400 text-white px-4 py-2 rounded-md"
                         >
                           Delete Job
