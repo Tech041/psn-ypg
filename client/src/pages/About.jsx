@@ -27,7 +27,7 @@ const About = () => {
           <p className="py-2">
             The PSN-YPG Job Portal is a smart, user-friendly platform designed
             to make job hunting  and internship placement easier for pharmacists. Built specifically for
-            the of PSN-YPG Lagos chapter, it connects pharmacy professionals
+            the  PSN-YPG Lagos chapter, it connects pharmacy professionals
             with the opportunities they deserve—quickly and efficiently
           </p>
           <p className="py-2">

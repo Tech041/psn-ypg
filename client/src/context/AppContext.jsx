@@ -42,8 +42,6 @@ export const AppContextProvider = ({ children }) => {
   const fetchAllJobs = async () => {
     const { data } = await apiRequest.get("/api/fetch-jobs");
     if (data.success) {
-      console.log("intern", data.internPosts);
-      console.log("jobs", data.jobPosts);
       setJobs(data.jobPosts);
       setInternship(data.internPosts);
       setJobIsLoading(false);

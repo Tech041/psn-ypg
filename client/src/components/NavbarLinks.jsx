@@ -3,6 +3,7 @@ import { AiFillMedicineBox } from "react-icons/ai";
 import { BsFillBoxSeamFill } from "react-icons/bs";
 import { FcAbout } from "react-icons/fc";
 import { FiHome } from "react-icons/fi";
+import { IoLogoGameControllerB } from "react-icons/io";
 import { LiaSchoolSolid } from "react-icons/lia";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
@@ -41,11 +42,25 @@ const NavbarLinks = () => {
           </span>
           <span className="text-sm">Jobs</span>
         </NavLink>
-        <NavLink onClick={() => scrollTo(0, 0)} to={"/internships"} className={listStyle}>
+        <NavLink
+          onClick={() => scrollTo(0, 0)}
+          to={"/internships"}
+          className={listStyle}
+        >
           <span className="flex items-center justify-center">
             <LiaSchoolSolid size={20} />
           </span>
           <span className="text-sm">Internships</span>
+        </NavLink>
+        <NavLink
+          onClick={() => scrollTo(0, 0)}
+          to={"/revision-questions"}
+          className={listStyle}
+        >
+          <span className="flex items-center justify-center">
+            <IoLogoGameControllerB size={20} />
+          </span>
+          <span className="text-sm">BrainTeaze</span>
         </NavLink>
         {token && (
           <NavLink
