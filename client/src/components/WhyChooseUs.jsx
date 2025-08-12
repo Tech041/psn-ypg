@@ -17,8 +17,8 @@ const WhyChooseUs = () => {
           <div className="flex flex-col md:flex-row justify-center gap-4">
             <div className=" w-full md:w-[30%]">
               <img
-                src="/medical_team.webp"
-                alt="medical team image"
+                src="/pharm_image1.webp"
+                alt="pharmacy image"
                 className="w-full h-full"
               />
             </div>
