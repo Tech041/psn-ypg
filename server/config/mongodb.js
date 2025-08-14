@@ -1,9 +1,11 @@
 import mongoose from "mongoose";
 
 const connectDB = async () => {
-  mongoose.connection.on("connected", () => {
+  try {
+    await mongoose.connect(`${process.env.MONGODB_URI}/psn-ypg`);
     console.log("Database connected");
-  });
-  await mongoose.connect(`${process.env.MONGODB_URI}/psn-ypg`);
+  } catch (error) {
+    console.log("Error connecting to DB", error);
+  }
 };
 export default connectDB;

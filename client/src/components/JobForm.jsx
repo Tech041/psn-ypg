@@ -78,7 +78,7 @@ const JobForm = () => {
               )}
             </div>
             <div className="w-full flex flex-col">
-              <input
+              <textarea
                 {...register("location")}
                 type="text"
                 name="location"

@@ -44,7 +44,7 @@ const OurBlogs = () => {
             >
               <BlogCard
                 src={"/pharm_image3.webp"}
-                title={"Navigating healthcare hiriing challenges"}
+                title={"Navigating healthcare hiring challenges"}
                 text={
                   " Addressing healthcare hiring challenges requires agility,strategic outreach, and innovation. From talent shortages to evolving care demands, success lies in adapting recruitment methods, leveraging ..."
                 }
