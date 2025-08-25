@@ -74,7 +74,7 @@ const NewsLetter = () => {
             {/* Right Content */}
             <div className="flex-1 w-full hidden md:block ">
               <img
-                src="/news_img.webp"
+                src="/pharmacy.webp"
                 alt="team_image"
                 className="w-full h-[250px] object-cover"
               />
