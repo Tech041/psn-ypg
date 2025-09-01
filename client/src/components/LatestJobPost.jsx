@@ -18,7 +18,8 @@ const LatestJobPost = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
           {jobs
-            ?.reverse()
+            ?.slice()
+            .reverse()
             .slice(0, 4)
             .map((job) => (
               <motion.div
