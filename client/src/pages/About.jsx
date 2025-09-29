@@ -7,6 +7,7 @@ const services = [
   "portfolio websites",
   "real estate applications",
   "dashboards",
+  "job portals",
   "learning management systems",
 ];
 
@@ -26,25 +27,31 @@ const About = () => {
           </h1>
           <p className="py-2">
             The PSN-YPG Job Portal is a smart, user-friendly platform designed
-            to make job hunting  and internship placement easier for pharmacists. Built specifically for
-            the  PSN-YPG Lagos chapter, it connects pharmacy professionals
-            with the opportunities they deserve—quickly and efficiently
+            to make job hunting and internship placement easier for pharmacists.
+            Built specifically for the PSN-YPG Lagos chapter, it connects
+            pharmacy professionals with the opportunities they deserve—quickly
+            and efficiently
           </p>
+          <h1 className="text-xl font-semibold text-center text-green-600 italic pt-3 pb-2">
+            About The Developer
+          </h1>
           <p className="py-2">
-            Crafted by a Pharmacist who is equally a Software Engineer, this
-            portal is his way of blending tech with pharmacy practice. Through
+            This developer is Pharmacist who ventured into Software Engineering,
+            this portal is his way of blending tech with pharmacy practice to
+            ease stress of job search for his professional colleagues. Through
             his company,{" "}
             <a
               href="https://neltech.onrender.com"
               target="_blank"
-              className="text-blue-600"
+              className="text-blue-600 underline"
             >
               NELTECH
             </a>
             , where he builds modern solutions that solve real-world problems.
           </p>
           <h2 className="">
-            What we build at NELTECH include but not limited to:
+            What we build at NELTECH include all kinds of Software applications
+            but not limited to:
           </h2>
           <ul className="">
             {services.map((service, index) => (
@@ -55,8 +62,8 @@ const About = () => {
           </ul>
           <div className="">
             <h2 className="">
-              He is open for collaborations and ready to solve real-world
-              problems through tech. Call or whatsapp
+              Are you a business owner who wants to boost his Business coverage,
+              he is there to craft out powerful Software applications for you.
             </h2>
             <p className="py-1">📞 Call or WhatsApp: 08030507512</p>
             <p className="">
