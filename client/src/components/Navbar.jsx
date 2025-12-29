@@ -81,7 +81,7 @@ const Navbar = () => {
                 >
                   <Link to={"/internships"}>Internships</Link>
                 </li>
-                 <li
+                <li
                   onClick={() => {
                     setOpen((prev) => !prev), scrollTo(0, 0);
                   }}
@@ -124,7 +124,7 @@ const Navbar = () => {
                   }}
                   className="flex items-center gap-2   px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
                 >
-                  Admin{" "}
+                  Login
                   <img
                     src={assets.arrow_icon}
                     alt="arrow_icon"

@@ -9,6 +9,9 @@ import NotFound from "./pages/NotFound";
 const Home = React.lazy(() => import("./pages/Home"));
 const Login = React.lazy(() => import("./pages/Login"));
 const PostJobs = React.lazy(() => import("./pages/PostJobs"));
+const Terms = React.lazy(() => import("./pages/Terms"));
+const Privacy = React.lazy(() => import("./pages/Privacy"));
+const Contact = React.lazy(() => import("./pages/Contact"));
 const Jobs = React.lazy(() => import("./pages/Jobs"));
 const SingleJob = React.lazy(() => import("./pages/SingleJob"));
 const WhyUs = React.lazy(() => import("./pages/WhyUs"));
@@ -26,6 +29,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/post-jobs" element={<PostJobs />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/job-details/:id" element={<SingleJob />} />
         <Route path="/why-us" element={<WhyUs />} />
         <Route path="/our-blog" element={<OurBlog />} />

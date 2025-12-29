@@ -40,9 +40,28 @@ const Footer = () => {
                   Home
                 </Link>
               </li>
+
               <li className="cursor-pointer">
-                <Link to={"/about"} onClick={() => scrollTo(0, 0)} className="">
-                  About
+                <Link
+                  to={"/contact"}
+                  onClick={() => scrollTo(0, 0)}
+                  className=""
+                >
+                  Contact
+                </Link>
+              </li>
+              <li className="cursor-pointer capitalize">
+                <Link to={"/terms"} onClick={() => scrollTo(0, 0)} className="">
+                  Terms and conditions
+                </Link>
+              </li>
+              <li className="cursor-pointer capitalize">
+                <Link
+                  to={"/privacy"}
+                  onClick={() => scrollTo(0, 0)}
+                  className=""
+                >
+                  Privacy policy
                 </Link>
               </li>
             </ul>
