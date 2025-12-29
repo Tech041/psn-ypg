@@ -152,7 +152,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="">
+        {/* <div className="">
           <p className="text-center py-1">Visit our official website</p>
 
           <a
@@ -162,7 +162,7 @@ const Footer = () => {
           >
             https://psnypglagos.org
           </a>
-        </div>
+        </div> */}
         <div className="">
           <hr className="" />
           <p className="py-5 text-xs  text-center  ">
