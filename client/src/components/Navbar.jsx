@@ -15,7 +15,7 @@ const Navbar = () => {
     setOpen((prev) => !prev);
   };
 
-  const { navigate, token, setToken } = useContext(AppContext);
+  const { navigate, token, setToken, dashboardToken } = useContext(AppContext);
 
   const logout = async () => {
     try {
@@ -51,7 +51,7 @@ const Navbar = () => {
               <ul className="flex flex-col justify-center items-center gap-6 font-bold">
                 <li
                   onClick={() => {
-                    setOpen((prev) => !prev), scrollTo(0, 0);
+                    (setOpen((prev) => !prev), scrollTo(0, 0));
                   }}
                   className=""
                 >
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </li>
                 <li
                   onClick={() => {
-                    setOpen((prev) => !prev), scrollTo(0, 0);
+                    (setOpen((prev) => !prev), scrollTo(0, 0));
                   }}
                   className=""
                 >
@@ -67,7 +67,7 @@ const Navbar = () => {
                 </li>
                 <li
                   onClick={() => {
-                    setOpen((prev) => !prev), scrollTo(0, 0);
+                    (setOpen((prev) => !prev), scrollTo(0, 0));
                   }}
                   className=""
                 >
@@ -75,7 +75,7 @@ const Navbar = () => {
                 </li>
                 <li
                   onClick={() => {
-                    setOpen((prev) => !prev), scrollTo(0, 0);
+                    (setOpen((prev) => !prev), scrollTo(0, 0));
                   }}
                   className=""
                 >
@@ -83,7 +83,7 @@ const Navbar = () => {
                 </li>
                 <li
                   onClick={() => {
-                    setOpen((prev) => !prev), scrollTo(0, 0);
+                    (setOpen((prev) => !prev), scrollTo(0, 0));
                   }}
                   className=""
                 >
@@ -92,11 +92,17 @@ const Navbar = () => {
                 {token && (
                   <li
                     onClick={() => {
-                      setOpen((prev) => !prev), scrollTo(0, 0);
+                      (setOpen((prev) => !prev), scrollTo(0, 0));
                     }}
                     className=""
                   >
                     <Link to={"/post-jobs"}>Post Jobs</Link>
+                  </li>
+                )}
+
+                {dashboardToken && (
+                  <li>
+                    <Link to={"/dashboard/overview"}>Dashboard</Link>
                   </li>
                 )}
               </ul>
@@ -120,7 +126,7 @@ const Navbar = () => {
               <div className="flex items-center  ">
                 <button
                   onClick={() => {
-                    navigate("/login"), scrollTo(0, 0);
+                    (navigate("/login"), scrollTo(0, 0));
                   }}
                   className="flex items-center gap-2   px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
                 >

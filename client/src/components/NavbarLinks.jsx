@@ -12,7 +12,7 @@ const listStyle =
   "cursor-pointer px-2 flex flex-col justify-center item-center text-primary ";
 
 const NavbarLinks = () => {
-  const { token } = useContext(AppContext);
+  const { token, dashboardToken } = useContext(AppContext);
   return (
     <nav className="">
       <ul className="flex justify-between items-center gap-3">
@@ -72,6 +72,19 @@ const NavbarLinks = () => {
               <AiFillMedicineBox size={20} />
             </span>
             <span className="text-sm">Post a job</span>
+          </NavLink>
+        )}
+
+        {dashboardToken && (
+          <NavLink
+            onClick={() => scrollTo(0, 0)}
+            to={"/dashboard/overview"}
+            className={listStyle}
+          >
+            <span className="flex items-center justify-center">
+              <AiFillMedicineBox size={20} />
+            </span>
+            <span className="text-sm">Dashboard</span>
           </NavLink>
         )}
       </ul>
