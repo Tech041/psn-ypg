@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+const baseURL = import.meta.env.VITE_BACKEND_URL;
+console.log("Base url", baseURL);
 function Tracker() {
   const location = useLocation();
 
@@ -11,7 +13,7 @@ function Tracker() {
       localStorage.setItem("visitorId", visitorId);
     }
 
-    fetch("http://localhost:8000/api/ypg-track-visit", {
+    fetch(`${baseURL}/api/ypg-track-visit`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
