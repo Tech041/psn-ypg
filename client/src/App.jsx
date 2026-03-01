@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import React from "react";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
+import Tracker from "./components/Tracker";
 
 // Dynamic imports.
 const Home = React.lazy(() => import("./pages/Home"));
@@ -19,16 +20,21 @@ const OurBlog = React.lazy(() => import("./pages/OurBlog"));
 const About = React.lazy(() => import("./pages/About"));
 const Internships = React.lazy(() => import("./pages/Internships"));
 const RevisionQuestions = React.lazy(() => import("./pages/RevisionQuestions"));
+const Dashboard = React.lazy(() => import("./pages/Dashboard"));
+const DashboardLogin = React.lazy(() => import("./pages/DashboardLogin"));
 
 const App = () => {
   return (
     <div className="w-full h-full overflow-x-hidden">
       <ToastContainer />
       <Navbar />
+      <Tracker />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/post-jobs" element={<PostJobs />} />
+        <Route path="/dashboard/overview" element={<Dashboard />} />
+        <Route path="/dashboard/login" element={<DashboardLogin />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />

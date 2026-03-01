@@ -7,6 +7,7 @@ import authRouter from "./routes/user.auth.route.js";
 import helmet from "helmet";
 import postRouter from "./routes/post.route.js";
 import questionRouter from "./routes/questions.route.js";
+import trackRouter from "./routes/tracker.js";
 const app = express();
 
 // DB AND CLOUDINARY CONNECTIONS
@@ -42,6 +43,7 @@ app.use(helmet());
 app.use("/api/auth", authRateLimiter, authRouter);
 app.use("/api", postRouter);
 app.use("/api", questionRouter);
+app.use("/api", trackRouter);
 
 app.get("/", (req, res) => {
   res.send("API IS WORKING");

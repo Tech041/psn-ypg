@@ -2,8 +2,17 @@ import React from "react";
 import JobForm from "../components/JobForm";
 import { AppContext } from "../context/AppContext";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { useEffect } from "react";
 
 const PostJobs = () => {
+  const { token } = useContext(AppContext);
+  useEffect(() => {
+    if (!token) {
+      window.location.href = "/login";
+    }
+  }, []);
+
   return (
     <section className="w-full min-h-screen pt-20">
       <motion.div

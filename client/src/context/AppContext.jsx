@@ -16,6 +16,8 @@ export const AppContextProvider = ({ children }) => {
   const [listed, setListed] = useState([]);
   const [internship, setInternship] = useState([]);
   const [token, setToken] = useState(localStorage.getItem("token") || null);
+  const [dashboardToken, setDashboardToken] = useState(localStorage.getItem("dashboard-token") || null);
+
 
   const navigate = useNavigate();
   // apply for jobs
@@ -55,6 +57,8 @@ export const AppContextProvider = ({ children }) => {
   }, []);
 
   const value = {
+    dashboardToken,
+    setDashboardToken,
     token,
     internship,
     setInternship,
