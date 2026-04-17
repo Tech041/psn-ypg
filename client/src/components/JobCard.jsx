@@ -9,21 +9,17 @@ const JobCard = ({ title, location, posted, id }) => {
     <Link
       to={`/job-details/${id}`}
       onClick={() => scrollTo(0, 0)}
-      className="flex items-center gap-3 border bg-gray-50 rounded-lg px-4 py-3 shadow-lg"
+      className="flex items-center gap-3 border border-green-500 bg-gray-50 rounded-lg px-4 py-3 shadow-lg"
     >
       <div className="w-[20%]">
-        <img
-          src="/ypg_thumb.webp"
-          alt="job_logo"
-          className="w-full h-[70px]"
-        />
+        <img src="/ypg_thumb.webp" alt="job_logo" className="w-full h-[70px]" />
       </div>
       <div className="w-[80%]">
-        <h2 className="">{title}</h2>
+        <h2 className="capitalize">{title}</h2>
         <div className="flex items-center text-gray-500 gap-2 text-sm">
           <div className="flex items-center justify-center gap-2 py-1">
             <IoLocationSharp size={10} />{" "}
-            <span className="text-xs">{location}</span>
+            <span className="text-xs capitalize">{location}</span>
           </div>
 
           <div className="flex items-center justify-center gap-2">

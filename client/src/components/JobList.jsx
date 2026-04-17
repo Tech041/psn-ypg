@@ -44,7 +44,7 @@ const JobList = () => {
 
     if (search) {
       postCopy = postCopy?.filter((item) =>
-        item?.title.toLowerCase().includes(search.toLowerCase())
+        item?.title.toLowerCase().includes(search.toLowerCase()),
       );
     }
     setListed(postCopy.reverse());
@@ -190,7 +190,7 @@ const JobList = () => {
                     onClick={() => toggleAccordion(item._id)}
                   >
                     <div>
-                      <div className="font-semibold text-green-700">
+                      <div className="font-semibold capitalize text-green-700">
                         {item.title}
                       </div>
                     </div>
@@ -204,42 +204,48 @@ const JobList = () => {
                   </div>
 
                   {openAccordionId === item._id && (
-                    <div className="p-4 bg-white text-sm space-y-1">
-                      <div>
-                        <span className={spanStyle}>Job Title:</span>{" "}
+                    <div className="p-4 bg-green-50 rounded-lg shadow-md border border-green-500 text-sm space-y-3">
+                      {/* Job Title */}
+                      <h2 className="text-lg capitalize font-bold text-gray-800 mb-2">
                         {item.title}
-                      </div>
-                      <div>
-                        <span className={spanStyle}>Facility:</span>{" "}
-                        {item.facility}
-                      </div>
-                      <div>
-                        <span className={spanStyle}>Location:</span>{" "}
-                        {item.location}
-                      </div>
-                      <div>
-                        <span className={spanStyle}>Salary:</span> {item.salary}
-                      </div>
-                      <div>
-                        <span className={spanStyle}>Requirements:</span>{" "}
-                        {item.requirements}
+                      </h2>
+
+                      {/* Job Details */}
+                      <div className="space-y-2 text-gray-700">
+                        <p>
+                          <span className={spanStyle}>🏢 Facility:</span>{" "}
+                          {item.facility}
+                        </p>
+                        <p>
+                          <span className={spanStyle}>📍 Location:</span>{" "}
+                          {item.location}
+                        </p>
+                        <p>
+                          <span className={spanStyle}>💰 Salary:</span>{" "}
+                          {item.salary}
+                        </p>
+                        <p>
+                          <span className={spanStyle}>📋 Requirements:</span>{" "}
+                          {item.requirements}
+                        </p>
+                        <p>
+                          <span className={spanStyle}>📞 Contact:</span>{" "}
+                          {item.contact}
+                        </p>
+                        <p>
+                          <span className={spanStyle}>⏳ Posted:</span>{" "}
+                          {formatDistanceToNow(new Date(item.createdAt), {
+                            addSuffix: true,
+                          })}
+                        </p>
                       </div>
 
-                      <div>
-                        <span className={spanStyle}>Contact:</span>{" "}
-                        {item.contact}
-                      </div>
-                      <div>
-                        <span className={spanStyle}>Posted:</span>{" "}
-                        {formatDistanceToNow(new Date(item.createdAt), {
-                          addSuffix: true,
-                        })}
-                      </div>
+                      {/* Delete Button */}
                       {token && (
-                        <div className="mt-2 text-center">
+                        <div className="mt-4 text-center">
                           <button
                             onClick={() => deleteJob(item._id)}
-                            className="bg-blue-600 hover:bg-blue-400 text-white px-3 py-2 rounded"
+                            className="bg-red-600 hover:bg-red-500 text-white px-4 py-2 rounded-lg shadow-sm transition"
                           >
                             Delete Job
                           </button>

@@ -23,63 +23,67 @@ const SingleJob = () => {
   }
 
   return (
-    <section className="w-full min-h-screen pt-20">
-      <div className="container">
-        <div className="pt-10">
-          <div className="flex justify-between gap-4">
-            <div className="flex-1">
-              <div className="mt-5">
-                <h1 className="py-2 text-green-600 italic">
-                  We wish you well in your job hunt, Goodluck!!!.
-                </h1>
-                <div>
-                  <span className={spanStyle}>Job Title:</span> {jobItem.title}
-                </div>
-                <div>
-                  <span className={spanStyle}>Salary:</span> ₦{jobItem.salary}
-                </div>
-                <div>
-                  <span className={spanStyle}>Requirements:</span>{" "}
-                  {jobItem.requirements}
-                </div>
-                <div>
-                  <span className={spanStyle}>Facility:</span>{" "}
-                  {jobItem.facility}
-                </div>
+    <section className="w-full min-h-screen bg-gray-50  pt-20">
+      <div className="container max-w-3xl mx-auto pt-10 px-4  pb-10">
+        {/* Motivational Header */}
+        <header className="text-center mb-10">
+          <h1 className="text-green-600 italic text-xl font-semibold">
+            We wish you well in your job hunt, Goodluck!!!
+          </h1>
+        </header>
 
-                <div>
-                  <span className={spanStyle}>Contact:</span> {jobItem.contact}
-                </div>
-                <div>
-                  <span className={spanStyle}>Posted:</span>{" "}
-                  {formatDistanceToNow(new Date(jobItem.createdAt), {
-                    addSuffix: true,
-                  })}
-                </div>
-                {token && (
-                  <div className="mt-4 pt-4 flex justify-center mb-4">
-                    <button
-                      onClick={() => deleteJob(jobItem._id)}
-                      className="bg-blue-600 hover:bg-blue-400 text-white px-4 py-2 rounded-md"
-                    >
-                      Delete Job
-                    </button>
-                  </div>
-                )}
-              </div>
-            </div>
+        {/* Job Card */}
+        <div className="bg-green-50 shadow-lg rounded-xl p-8 border border-green-500">
+          {/* Job Title */}
+          <h2 className="text-3xl  capitalize font-bold text-gray-800 mb-6">
+            {jobItem.title}
+          </h2>
+
+          {/* Job Details */}
+          <div className="space-y-4 text-gray-700">
+            <p>
+              <span className={spanStyle}>💰 Salary:</span> ₦{jobItem.salary}
+            </p>
+            <p>
+              <span className={spanStyle}>📋 Requirements:</span>{" "}
+              {jobItem.requirements}
+            </p>
+            <p>
+              <span className={spanStyle}>🏢 Facility:</span> {jobItem.facility}
+            </p>
+            <p>
+              <span className={spanStyle}>📞 Contact:</span> {jobItem.contact}
+            </p>
+            <p>
+              <span className={spanStyle}>⏳ Posted:</span>{" "}
+              {formatDistanceToNow(new Date(jobItem.createdAt), {
+                addSuffix: true,
+              })}
+            </p>
           </div>
+
+          {/* Delete Button */}
+          {token && (
+            <div className="mt-8 flex justify-center">
+              <button
+                onClick={() => deleteJob(jobItem._id)}
+                className="bg-red-600 hover:bg-red-500 text-white px-6 py-2 rounded-lg shadow-md transition"
+              >
+                Delete Job
+              </button>
+            </div>
+          )}
         </div>
-        <div className="flex items-center justify-center py-4">
+
+        {/* Back Link */}
+        <div className="flex items-center justify-center mt-10">
           <Link
-            to={`${
-              jobItem.category === "internships" ? "/internships" : "/jobs"
-            }`}
-            className="text-blue-500 underline"
+            to={jobItem.category === "internships" ? "/internships" : "/jobs"}
+            className="text-blue-600 font-medium hover:underline"
           >
             {jobItem.category === "internships"
-              ? "View all Internships"
-              : " View all jobs"}
+              ? "← View all Internships"
+              : "← View all Jobs"}
           </Link>
         </div>
       </div>
