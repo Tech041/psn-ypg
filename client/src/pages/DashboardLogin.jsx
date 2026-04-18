@@ -41,10 +41,9 @@ const DashboardLogin = () => {
       }
     } catch (error) {
       toast.error(error.response?.data?.message);
-      console.log(error);
+      // console.log(error);
     }
   };
-
 
   return (
     <section className="flex items-center justify-center min-h-screen  bg-white pt-20  ">

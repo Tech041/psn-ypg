@@ -5,6 +5,7 @@ import { formatDistanceToNow } from "date-fns";
 
 import Spinner from "./Spinner";
 import { AppContext } from "../context/AppContext";
+import { Link } from "react-router-dom";
 
 const spanStyle = "font-semibold text-lg py-2";
 
@@ -25,7 +26,7 @@ const InternshipList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const jobsPerPage = 6;
 
-  console.log("internship is", internship);
+  // console.log("internship is", internship);
 
   useEffect(() => {
     fetchAllJobs();
@@ -45,7 +46,7 @@ const InternshipList = () => {
 
     if (search) {
       postCopy = postCopy?.filter((item) =>
-        item?.title.toLowerCase().includes(search.toLowerCase())
+        item?.title.toLowerCase().includes(search.toLowerCase()),
       );
     }
     setListed(postCopy.reverse());
@@ -200,7 +201,7 @@ const InternshipList = () => {
                     onClick={() => toggleAccordion(item._id)}
                   >
                     <div>
-                      <div className="font-semibold text-green-700">
+                      <div className="font-semibold capitalize text-green-700">
                         {item.title}
                       </div>
                     </div>
@@ -214,11 +215,10 @@ const InternshipList = () => {
                   </div>
 
                   {openAccordionId === item._id && (
-                    <div className="p-4 bg-white text-sm space-y-1">
-                      <div>
-                        <span className={spanStyle}>Job Title:</span>{" "}
+                    <div className="p-4 bg-green-50 rounded-lg shadow-md border border-green-500 text-sm space-y-3">
+                      <h2 className="text-lg uppercase italic font-bold text-gray-800 mb-2">
                         {item.title}
-                      </div>
+                      </h2>
                       <div>
                         <span className={spanStyle}>Facility:</span>{" "}
                         {item.facility}

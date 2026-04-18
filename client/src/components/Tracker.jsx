@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const baseURL = import.meta.env.VITE_BACKEND_URL;
-console.log("Base url", baseURL);
+// console.log("Base url", baseURL);
 function Tracker() {
   const location = useLocation();
 

@@ -22,6 +22,7 @@ const Internships = React.lazy(() => import("./pages/Internships"));
 const RevisionQuestions = React.lazy(() => import("./pages/RevisionQuestions"));
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const DashboardLogin = React.lazy(() => import("./pages/DashboardLogin"));
+const Advert = React.lazy(() => import("./pages/Advert"));
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/our-blog" element={<OurBlog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
+        <Route path="/advert" element={<Advert />} />
         <Route path="/internships" element={<Internships />} />
         <Route path="/revision-questions" element={<RevisionQuestions />} />
         <Route path="/*" element={<NotFound />} />

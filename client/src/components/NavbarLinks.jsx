@@ -62,6 +62,16 @@ const NavbarLinks = () => {
           </span>
           <span className="text-sm">BrainTeaze</span>
         </NavLink>
+        <NavLink
+          onClick={() => scrollTo(0, 0)}
+          to={"/advert"}
+          className={listStyle}
+        >
+          <span className="flex items-center justify-center">
+            <BsFillBoxSeamFill size={20} />
+          </span>
+          <span className="text-sm">Advert</span>
+        </NavLink>
         {token && (
           <NavLink
             onClick={() => scrollTo(0, 0)}

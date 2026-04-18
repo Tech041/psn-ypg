@@ -87,6 +87,14 @@ const Navbar = () => {
                   }}
                   className=""
                 >
+                  <Link to={"/advert"}>Advert</Link>
+                </li>
+                <li
+                  onClick={() => {
+                    (setOpen((prev) => !prev), scrollTo(0, 0));
+                  }}
+                  className=""
+                >
                   <Link to={"/revision-questions"}>BrainTeaze</Link>
                 </li>
                 {token && (

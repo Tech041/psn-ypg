@@ -78,12 +78,20 @@ const SingleJob = () => {
         {/* Back Link */}
         <div className="flex items-center justify-center mt-10">
           <Link
+            onClick={() => scrollTo(0, 0)}
             to={jobItem.category === "internships" ? "/internships" : "/jobs"}
             className="text-blue-600 font-medium hover:underline"
           >
             {jobItem.category === "internships"
               ? "← View all Internships"
               : "← View all Jobs"}
+          </Link>
+        </div>
+
+        <div className="flex items-center justify-center mt-5 text-sm text-green-600">
+          <Link onClick={() => scrollTo(0, 0)} to={"/advert"}>
+            {" "}
+            ← About NELTECH
           </Link>
         </div>
       </div>

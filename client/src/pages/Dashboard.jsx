@@ -12,27 +12,27 @@ export default function Dashboard() {
   const fetchUniqueVisitors = async () => {
     try {
       const response = await apiRequest("/api/stats/unique-visitors");
-      console.log("Unique visitors", response);
+      // console.log("Unique visitors", response);
       if (response.data.success) {
         setLifetime(response.data.allUniqueVisitors);
       }
     } catch (error) {
       toast.error("Failed to fetch unique visitors");
-      console.error("Error fetching unique visitors:", error);
+      // console.error("Error fetching unique visitors:", error);
     }
   };
 
   const fetchDailyVisitors = async () => {
     try {
       const response = await apiRequest("/api/stats/daily");
-      console.log("daily stats", response);
+      // console.log("daily stats", response);
 
       if (response.data.success) {
         setDaily(response.data.dailyVisitors);
       }
     } catch (error) {
       toast.error("Failed to fetch daily visitors");
-      console.error("Error fetching daily visitors:", error);
+      // console.error("Error fetching daily visitors:", error);
     }
   };
 
@@ -44,7 +44,7 @@ export default function Dashboard() {
       }
     } catch (error) {
       toast.error("Failed to fetch top URL");
-      console.error("Error fetching top URL:", error);
+      // console.error("Error fetching top URL:", error);
     }
   };
 
